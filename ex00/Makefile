@@ -6,7 +6,7 @@
 #    By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/27 17:18:15 by asafrono          #+#    #+#              #
-#    Updated: 2025/05/06 15:56:22 by tjorge-l         ###   ########.fr        #
+#    Updated: 2025/05/06 16:35:06 by tjorge-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ RM = rm -rf
 DEBUG_FLAGS = -g
 VFLAGS = -s --leak-check=full --show-leak-kinds=all --track-origins=yes --track-fds=yes
 
-SRCS = main.cpp Zombie.cpp newZombie.cpp
+SRCS = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 
 OBJS = $(SRCS:%.cpp=%.o)
 
