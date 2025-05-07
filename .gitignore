@@ -1,4 +1,4 @@
 .vscode/
 ex0*/*.o
+ex0*/prog
 ex01/zombie
-ex02/prog
