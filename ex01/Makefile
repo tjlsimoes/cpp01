@@ -6,7 +6,7 @@
 #    By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/27 17:18:15 by asafrono          #+#    #+#              #
-#    Updated: 2025/05/06 16:40:19 by tjorge-l         ###   ########.fr        #
+#    Updated: 2025/05/07 17:11:01 by tjorge-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ run: $(NAME)
 
 debug: CFLAGS = -g -Wall -Wextra -Werror
 debug: $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS)-o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 rdebug: debug
 	valgrind $(VFLAGS) ./$(NAME)
