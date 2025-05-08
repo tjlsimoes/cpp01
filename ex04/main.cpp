@@ -6,7 +6,7 @@
 /*   By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 10:28:23 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/05/08 13:18:42 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/05/08 15:36:18 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,12 +75,10 @@ int	main(int argc, char **argv)
 	new_path = argv[1];
 	new_path += ".replace";
 	filename.open(argv[1]);
-	newfile.open(&(new_path[0]),  std::ios::out | std::ios_base::trunc);
+	newfile.open(&(new_path[0]), std::ios::out | std::ios_base::trunc);
 	if (!filename.is_open() || !newfile.is_open())
 		return (std::cerr << "Failed to open file streams." << std::endl, 1);
-	
-	filter_output(filename, newfile,argv[2], argv[3]);
-
+	filter_output(filename, newfile, argv[2], argv[3]);
 	filename.close();
 	newfile.close();
 	return (0);
