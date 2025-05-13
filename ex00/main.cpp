@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+        */
+/*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 16:16:43 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/05/06 16:37:40 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/05/13 10:47:33 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@
 // 	return (0);
 // }
 
-void	randomChump(std::string name);
-Zombie	*newZombie(std::string name);
+// void	randomChump(std::string name);
+// Zombie	*newZombie(std::string name);
 
 int	main(void)
 {

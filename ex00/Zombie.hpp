@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+        */
+/*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 16:04:35 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/05/06 16:26:39 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/05/13 10:47:30 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ class Zombie
 
 		std::string		get_name(void) const;
 		void			set_name(std::string str);
-		void			randomChump(std::string name);
-		Zombie			*newZombie(std::string name);
-
 		void			announce(void) const;
 	
 	private:
 		std::string	name;
 };
+
+void			randomChump(std::string name);
+Zombie			*newZombie(std::string name);
 
 #endif
