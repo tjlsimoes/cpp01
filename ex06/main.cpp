@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+        */
+/*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 15:43:36 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/05/08 17:28:45 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/05/13 11:08:41 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 int	main(int argc, char **argv)
 {
-	(void)argc;
 	Harl	harl;
 	int		i;
 
+	if (argc != 2)
+		return (1);
 	std::map<std::string, int> map;
 	map["DEBUG"] = 1;
 	map["INFO"] = 2;
