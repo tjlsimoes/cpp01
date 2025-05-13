@@ -10,8 +10,8 @@ int	main(void)
 	stringPTR = &string;
 	std::string	&stringREF = string;
 
-	std::cout << "Memory address string: " << stringPTR << std::endl;
-	std::cout << "Memory address stringPTR: " << &stringPTR << std::endl;
+	std::cout << "Memory address string: " << &string << std::endl;
+	std::cout << "Memory address stringPTR: " << stringPTR << std::endl;
 	std::cout << "Memory address stringRE: " << &stringREF << std::endl;
 
 	std::cout << "\n";
